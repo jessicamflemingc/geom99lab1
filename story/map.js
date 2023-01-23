@@ -21,15 +21,7 @@ new google.maps.Marker({
     icon: {
       url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
     }
-  });
-marker.setMap(map);  
-var infowindow = new google.maps.InfoWindow({
-  content: "I absolutely hate Google maps now and would," +
-  "Like to throw my computer out the window",
-});
-  infowindow.open(map,marker);
-}  
-  
+  });  
 new google.maps.Marker({
     position: maunaloa,
     map,
@@ -70,7 +62,52 @@ new google.maps.Marker({
       url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
     }
   });
+var content1 = 
+"<div><br>Mauna Kea Volcano</b><br/>blah blah lbah ewfo hfeopun n efuefo jh3 oiefwj cqp gw eipq oig hjwpf k wqfu  qepj</b>
+var markers = [
+  { 
+  "title": 'Mauna Kea Volcano',
+  "lat": '19.820'
+  "lng": '-155.468',
+  "description": content1
+  }
+ ];
 
-}
+window.onload - LoadMap;
+  
+  function LoadMap() {
+    var mapOptions = {
+      center: new google.maps.LatLng (20.602, -157.511),
+      zoom: 5
+      mapTypeId: 'terrain'
+    };
+  var map = new google.maps.Map(document.getElementById("dvMap"), mapOptions;
+  
+  var InfoWindow.
+  var infoWindow = new google.maps.InfoWindow();
+    
+  for (var i = 0; i < markers.length; i++) {
+    var data = markers [i];
 
+    var myLatLng - new google.maps.LatLng(data.lat, data.Lng);
+    
+    var marker = new google.maps.Markers({
+      position: myLatLng,
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: data'title,
+      icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
+    }
+  });
+   
+    (function (marker, data) {
+      google.maps.event.addListener(marker, "click", function (e) {
+        infoWindow.setContent('<div style="width: 250px"> + data.description + '</div>');
+        infoWindow.open(map,marker);
+      });
+    })(marker, data);
+
+  }
+    
 window.initMap = initMap;
