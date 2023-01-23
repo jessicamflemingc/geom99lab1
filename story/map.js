@@ -12,15 +12,11 @@ function initMap() {
     zoom: 8,
     center: mapcentre,
   });
-// Change the background color.
-  const pinViewBackground = new google.maps.marker.PinView({
-    background: "#FBBC04",
-  });
+
 new google.maps.Marker({
     position: haleakala,
     map,
     title: "Haleakalā Volcano",
-    content: pinViewBackground.element,
   });
 new google.maps.Marker({
     position: maunaloa,
