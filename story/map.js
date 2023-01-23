@@ -11,6 +11,7 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 8,
     center: mapcentre,
+  });
 // Change the background color.
   const pinViewBackground = new google.maps.marker.PinView({
     background: "#FBBC04",
