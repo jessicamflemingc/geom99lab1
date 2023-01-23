@@ -15,7 +15,6 @@ function initMap() {
 
 new google.maps.Marker({
     position: haleakala,
-    background: blue,
     map,
   });
 new google.maps.Marker({
