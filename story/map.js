@@ -12,24 +12,23 @@ function initMap() {
     zoom: 8,
     center: mapcentre,
   });
-
-  new google.maps.Marker({
+new google.maps.Marker({
     position: haleakala,
     map,
   });
-    new google.maps.Marker({
+  new google.maps.Marker({
     position: maunaloa,
     map,
   });
-  new google.maps.Marker({
+new google.maps.Marker({
     position: loihi,
     map,
   });
-  new google.maps.Marker({
+new google.maps.Marker({
     position: hualalai,
     map,
   });
-  new google.maps.Marker({
+new google.maps.Marker({
     position: kilauea,
     map,
   });
