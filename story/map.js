@@ -33,7 +33,7 @@ new google.maps.Marker({
 new google.maps.Marker({
     position: loihi,
     map,
-    title: "Lōʻihi Seamount",
+    title: "Kamaʻehuakanaloa Seamount (formerly Lōʻihi",
     icon: {
       url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
     }
