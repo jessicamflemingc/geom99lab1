@@ -22,6 +22,10 @@ new google.maps.Marker({
       url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
     }
   });
+var infowindow = new google.maps.InfoWindow({
+  content: "I absolutely hate Google maps now and would," +
+  "Like to throw my computer out the window",
+});
 new google.maps.Marker({
     position: maunaloa,
     map,
