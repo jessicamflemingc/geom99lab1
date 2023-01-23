@@ -43,7 +43,7 @@ function setMarkers(map) {
     type: "poly",
   };
 
-  for (let i = 0; i < beaches.length; i++) {
+  for (let i = 0; i < volcano.length; i++) {
     const beach = volcano[i];
 
     new google.maps.Marker({
