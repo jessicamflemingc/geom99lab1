@@ -17,22 +17,7 @@ function initMap() {
     position: haleakala,
     map,
   });
-  new google.maps.Marker({
-    position: maunaloa,
-    map,
-  });
-  new google.maps.Marker({
-    position: loihi,
-    map,
-  });
-  new google.maps.Marker({
-    position: hualalai,
-    map,
-  });
-  new google.maps.Marker({
-    position: kilauea,
-    map,
-  });
+
 }
 
 window.initMap = initMap;
