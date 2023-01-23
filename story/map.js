@@ -8,6 +8,9 @@ function initMap() {
   const loihi = { lat: 18.914, lng: -155.271 };
   const hualalai = { lat: 19.686, lng: -155.865 };
   const kilauea = { lat: 19.406, lng: -155.283 };
+  const pinViewBackground = new google.maps.marker.PinView({
+    background: "#FBBC04",
+});
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 8,
     center: mapcentre,
@@ -19,6 +22,7 @@ new google.maps.Marker({
   });
 new google.maps.Marker({
     position: maunaloa,
+    content: pinViewBackground.element,
     map,
   });
 new google.maps.Marker({
