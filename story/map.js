@@ -18,28 +18,40 @@ new google.maps.Marker({
     map,
     title: "Haleakalā Volcano",
     icon: {
-      url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+      url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
     }
   });
 new google.maps.Marker({
     position: maunaloa,
     map,
     title: "Mauna Loa Volcano",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
+    }
   });
 new google.maps.Marker({
     position: loihi,
     map,
     title: "Lōʻihi Seamount",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
+    }
   });
 new google.maps.Marker({
     position: hualalai,
     map,
     title: "Hualālai Volcano",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
+    }
   });
 new google.maps.Marker({
     position: kilauea,
     map,
     title: "Kīlauea",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
+    }
   });
 
 }
