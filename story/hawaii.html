@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Simple Map</title>
+    <title>Hawaiian Volcanoes</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <style>
       /* 
@@ -12,14 +12,29 @@
       }
 
       /* 
-       * Optional: Makes the sample page fill the window. 
+       Makes the sample page fill the window. 
        */
        html,
        body {
           height: 100%;
           margin: 0;
           padding: 0;
+    h1 {
+      font-size: 24px;
+      margin-top:3%;
       }
+    p {
+      margin-bottom: 0;
+      padding-top: 1%;
+      padding-bottom: 1%
+    }
+    ul {
+      margin-bottom: 5%;
+    }
+    .page-footer {
+      font-size: 14px;
+      background-color: white
+    }
     </style>
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <script type="module" src="./map.js"></script>
@@ -27,12 +42,6 @@
   <body>
     <div id="map"></div>
 
-    <!-- 
-      The `defer` attribute causes the callback to execute after the full HTML
-      document has been parsed. For non-blocking uses, avoiding race conditions,
-      and consistent behavior across browsers, consider loading using Promises
-      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-      -->
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly"
       defer
