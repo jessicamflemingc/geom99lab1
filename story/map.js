@@ -2,20 +2,13 @@
 //from https://developers.google.com/maps/documentation/javascript/examples/map-simple
 
 function initMap() {
-  const myLatLng = { lat: 21.566, lng: -157.993 };
+  const mapcentre = { lat: 20.602, lng: -157.511 };
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 8,
-    center: myLatLng,
+    center: mapcentre,
   });
 
-//basics for creating simple markers is from the Google Maps Platform template for simple markers
-//from https://developers.google.com/maps/documentation/javascript/examples/marker-simple
-
-  new google.maps.Marker({
-    position: myLatLng,
-    map,
-    title: "Hello World!",
-  });
+ 
   
 setMarkers(map);
 }
