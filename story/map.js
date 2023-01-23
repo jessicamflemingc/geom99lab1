@@ -1,6 +1,6 @@
 //The simple map basics are from the Google Maps Platform documentation and has been modified to present my designated location of the Hawaii Islands
 //from https://developers.google.com/maps/documentation/javascript/examples/map-simple
-
+//the basics for the simple marker is from https://developers.google.com/maps/documentation/javascript/examples/marker-simple, modified for volcanoes in Hawaii
 function initMap() {
   const mapcentre = { lat: 20.602, lng: -157.511 };
   const haleakala = { lat: 20.709, lng: -156.253 };
@@ -15,22 +15,27 @@ function initMap() {
 new google.maps.Marker({
     position: haleakala,
     map,
+    title: "Haleakalā Volcano",
   });
-  new google.maps.Marker({
+new google.maps.Marker({
     position: maunaloa,
     map,
+    title: "Mauna Loa Volcano",
   });
 new google.maps.Marker({
     position: loihi,
     map,
+    title: "Lōʻihi Seamount",
   });
 new google.maps.Marker({
     position: hualalai,
     map,
+    title: "Hualālai Volcano",
   });
 new google.maps.Marker({
     position: kilauea,
     map,
+    title: "Kīlauea",
   });
 
 }
