@@ -62,6 +62,7 @@ new google.maps.Marker({
       url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
     }
   });
+
 }
 
 window.initMap = initMap;
