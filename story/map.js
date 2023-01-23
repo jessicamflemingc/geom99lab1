@@ -17,6 +17,9 @@ new google.maps.Marker({
     position: haleakala,
     map,
     title: "Haleakalā Volcano",
+    icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+    }
   });
 new google.maps.Marker({
     position: maunaloa,
