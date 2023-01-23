@@ -8,21 +8,23 @@ function initMap() {
     center: mapcentre,
   });
 
- 
-  
 setMarkers(map);
 }
 
 // Data for the markers consisting of a name, a LatLng and a zIndex for the
 // order in which these markers should display on top of each other.
-const beaches = [
-  ["Haleakalā", 20.709, -156.253],
-  ["Mauna Loa", 19.471, -155.592],
-  ["Lōʻihi", 18.914, -155.271],
-  ["Hualālai", 19.686, -155.865],
-  ["Kīlauea", 19.406, -155.283],
+//const volcano = [
+//  ["Haleakalā", 20.709, -156.253],
+//  ["Mauna Loa", 19.471, -155.592],
+//  ["Lōʻihi", 18.914, -155.271],
+//  ["Hualālai", 19.686, -155.865],
+//  ["Kīlauea", 19.406, -155.283],
 ];
-
+new google.maps.Marker({
+    position: { lat: 20.602, lng: -157.511 };
+    map,
+    title: "Hello World!",
+  });
 
 }
 
