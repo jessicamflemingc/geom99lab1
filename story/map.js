@@ -63,7 +63,7 @@ function initMap() {
     "</div>" +
     "</div>";
   const infowindow = new google.maps.InfoWindow({
-    content: contentmauna,
+    content: contentmaunaloa,
     ariaLabel: "Maunaloa",
   });
   const marker = new google.maps.Marker({
