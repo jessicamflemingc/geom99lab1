@@ -2,11 +2,10 @@
 //modified to be the location of Mauna Loa Volcano with new content
 
 function initMap() {
-  const centerofMap = { lat: 20.468, lng: -157.756 };
   const maunaloa = { lat: 19.471, lng: -155.592 };
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 8,
-    center: centerofMap,
+    center: maunaloa,
   });
   const contentString =
     '<div id="content">' +
