@@ -33,12 +33,12 @@ function initMap() {
     "</div>";
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
-    ariaLabel: "Hualalai",
+    ariaLabel: "Maunaloa",
   });
   const marker = new google.maps.Marker({
-    position: hualalai,
+    position: maunaloa,
     map,
-    title: "Hualalai",
+    title: "Maunaloa",
   });
    
   marker.addListener("click", () => {
