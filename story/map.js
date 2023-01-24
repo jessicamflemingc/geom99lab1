@@ -1,8 +1,8 @@
 function initMap() {
-  const uluru = { lat: 20.709, lng: -156.253 };
+  const hualalai = { lat: 19.686, lng: -155.865 };
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 6,
-    center: uluru,
+    center: hualalai,
   });
   const contentString =
     '<div id="content">' +
@@ -27,12 +27,12 @@ function initMap() {
     "</div>";
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
-    ariaLabel: "Uluru",
+    ariaLabel: "Hualalai",
   });
   const marker = new google.maps.Marker({
-    position: uluru,
+    position: hualalai,
     map,
-    title: "Uluru (Ayers Rock)",
+    title: "Hualalai",
   });
 
   marker.addListener("click", () => {
