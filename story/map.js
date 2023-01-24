@@ -1,3 +1,6 @@
+//basics of how to code an info window is from https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple#maps_infowindow_simple-javascript
+//modified to be the location of Mauna Loa Volcano with new content
+
 function initMap() {
   const centerofMap = { lat: 20.468, lng: -157.756 };
   const maunaloa = { lat: 19.471, lng: -155.592 };
@@ -9,21 +12,14 @@ function initMap() {
     '<div id="content">' +
     '<div id="siteNotice">' +
     "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+    '<h1 id="firstHeading" class="firstHeading">Mauna Loa Volcano</h1>' +
     '<div id="bodyContent">' +
-    "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
-    "sandstone rock formation in the southern part of the " +
-    "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
-    "south west of the nearest large town, Alice Springs; 450&#160;km " +
-    "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
-    "features of the Uluru - Kata Tjuta National Park. Uluru is " +
-    "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
-    "Aboriginal people of the area. It has many springs, waterholes, " +
-    "rock caves and ancient paintings. Uluru is listed as a World " +
-    "Heritage Site.</p>" +
-    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
-    "(last visited June 22, 2009).</p>" +
+    "<p>Mauna Loa is the largest volcano on Earth and has erupted 33 times since 1843." +
+    "The last eruption in 1943 was observed to have lasted over 20 days which" +
+    "reached over 7km away"</p>" +
+    '<p>Attribution: Active Volcanoes of Hawaii, <a href="https://www.usgs.gov/observatories/hvo/active-volcanoes-hawaii">' +
+    "https://www.usgs.gov/observatories/hvo/active-volcanoes-hawaii</a> " +
+    "(last visited January 23, 2023).</p>" +
     "</div>" +
     "</div>";
   const infowindow = new google.maps.InfoWindow({
