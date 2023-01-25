@@ -1,5 +1,6 @@
 let map;
-
+/*Basics of simple map and simple markers were based on Google Maps Platform https://developers.google.com/maps/documentation/javascript/examples/marker-simple and
+https://developers.google.com/maps/documentation/javascript/examples/map-simple */
 function initMap() {
   const mapcentre = { lat: 20.602, lng: -157.511 };
   const haleakala = { lat: 20.709, lng: -156.253 };
